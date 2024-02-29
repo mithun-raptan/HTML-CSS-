@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.sun{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #fff;
+    background:rgb(255, 162, 0)
+}
+
+.axis1{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-right: 2px solid #fff;
+    /* border: 2px solid #fff; */
+    border-radius: 50%;
+    animation: anime-1 8s linear  infinite;
+    
+}
+@keyframes anime-1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.axis1 .earth{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: green;
+    top: 260px;
+    left: 140px;
+}
+
+.axis1 .axis2{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border: 1px solid #fff;
+    border-right: 1px solid #fff;
+    top: 220px;
+    left: 98px;
+    border-radius: 50%;
+    animation: moondirection 4s linear  infinite  ;
+}
+.axis1 .axis2 .moon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    top: 130px;
+    left: 75px;
+    
+}
+@keyframes moondirection {  
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+
+
+
+
+    
+</style>
+
+</head>
+<body>
+    
+
+        <div class="sun"> </div>
+        <div class="axis1">
+            <div class="earth"></div>
+            <div class="axis2">
+                <div class="moon"></div>
+            </div>
+
+        </div>
+
+        
+         
+        
+
+
+        
+
+    
+</body>
+</html>

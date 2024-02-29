@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(246, 247, 238); height: 50px;
+        }
+        .menu ul{
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 20px;
+            
+        }
+       
+
+        .bcimg{
+            background-image: url("https://tse3.mm.bing.net/th?id=OIP.ersZu-oC6QefqO2SQOxPIwHaE1&pid=Api&P=0&h=180");
+            height: 100vh;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+
+            
+        }
+        
+         .first{
+            width: 100px;
+            height: 40px;
+            position: absolute;
+            left: 43%;
+            top: 80%;
+            transform: translate(-50%,-50%);
+            /* border-radius: 15%; */
+            background: none;
+            
+        }
+        .second{
+            width: 100px;
+            height: 40px;
+            position: absolute;
+            left: 57%;
+            top: 80%;
+            transform: translate(-50%,-50%);
+            /* border-radius: 15%; */
+            background: none;
+        }
+
+        h1{
+            position: absolute;
+            left: 20%;
+            top: 30%;
+            width: 600px;
+            
+            text-align: center;
+            font-size: 55px;
+            
+        }
+        p{
+            position: absolute;
+            width: 400px;
+            left: 30%;
+            top: 45%;
+        }
+
+        .hovering:hover{
+             
+            color: #20bf6b !important;
+            text-transform: uppercase;
+            background: #ffffff;
+            /* padding: 20px; */
+            border: 4px solid #20bf6b !important;
+            border-radius: 6px;
+            display: inline-block;
+            transition: all 0.3s ease 0s;
+            }
+            .example_d:hover {
+            color: #494949 !important;
+            border-radius: 50px;
+            border-color: #494949 !important;
+            transition: all 0.3s ease 0s;
+}
+        
+        .menu-hover:hover{
+            border-bottom: 1.5px solid blueviolet;
+        }
+        .logo{
+            margin-left: 20px;
+        }
+        .main{
+            position: sticky;
+            top: 0px;
+        }
+
+
+        h4{
+            position: fixed;
+            top: 12%;
+            left: 90%;
+           
+        }
+        h4 a{
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        
+            
+        
+
+    </style>
+</head>
+<body>
+    <div class="main" >
+
+        <div class="logo">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.GB0emPs3wJHnODyrt_Z54AHaF7&pid=Api&P=0&h=180" alt="" height="50px" width="80px">
+        </div>
+
+        <div class="menu">
+            <ul type="none" >
+
+                <li class="menu-hover">HOME</li>
+                <li class="menu-hover">BEDROOM</li>
+                <li class="menu-hover">DINNING</li>
+                <LI class="menu-hover">KITCHEN</LI>
+                <LI class="menu-hover">BABCKYARD</LI>
+            </ul>
+        </div>
+
+    </div>
+
+        <div class="bcimg" >
+            <h4><a href="">sign in</a></h4>
+
+            <h1>DESIGN YOUR HOUSE</h1>
+            <p>Subscribe easy tutorial Youtube channel to watc more videos,
+                press the bell icon to get latest updates.</p>
+            <button class="first hovering" >hello</button> 
+            <button  class="second hovering">ola</button>
+
+             
+            
+            
+            
+        </div>
+
+       
+
+
+
+   
+</body>
+</html>

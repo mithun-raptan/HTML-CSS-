@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main{
+            background-color: beige;
+            width: 100%;
+            height: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* .logo{
+            width: 50px;
+            height: 10px;
+        } */
+        .menu UL{
+            background-color: blue;
+            display: flex;
+            width: 400px;
+            justify-content: space-around;
+
+        }
+        p{
+            background-color: red;
+        }
+        .hovering:hover{
+            border: 2px solid red;
+        }
+        .search{
+            display: flex;
+        }
+        .searchtext{
+            width: 40px;
+            justify-content: center;
+            /* border: ; */
+            margin-right: 8px;
+        }
+        /* .text{
+            margin-left: 0;
+        } */
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="logo hovering">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.7IEvyXaEF_1GVbV6PChPswHaHa&pid=Api&P=0&h=180" alt="" height="48px" width="45px">
+        </div>
+        <p class="text hovering">india</p>
+        <div class="search hovering"> 
+            <div class="searchtext"><label for="search">search</label></div>
+            <div class="searchfield"><input type="text" name="" id="search" placeholder="seach here"></div>
+            
+
+        </div>
+        
+
+        <div class="menu hovering">
+            
+            <ul type="none">
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
